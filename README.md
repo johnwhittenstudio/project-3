@@ -31,6 +31,20 @@ if (theArgument === 0) {
      return false;
    }
 }
-
 beepBoop(0);
 Expected Output: ['0']
+Test Passed!
+
+New test for different outcome.
+
+function beepBoop(theArgument) {
+if (theArgument === 0) {
+   console.log (Array.from("0"));
+   } else {
+     return false;
+   }
+}
+
+beepBoop(2);
+Expected Output: false
+Test Passed!
