@@ -44,7 +44,66 @@ Expected Output: false
 <!-- Test Passed! -->
 
 
-Test: "It should return "Beep!" when user enters a 1"
+Test: "It should return "Not a Number!" when the user enters something that isn't a number."
+Code: beepBoop(inputtedNumber);
+inputtedNumber = "A"
+  if (isNaN(number)) {
+    return 'Not a Number!';
+  }
+Expected output" "Not a Number!"
+<!-- Test Passed! -->
+
+
+
+Test: "It should return an array with a 0 if the number 0 is inputted"
+Code: beepBoop(inputtedNumber);
+inputtedNumber = 0
+
+    function beepBoop(inputtedNumber) {
+    if (inputtedNumber === 0) {
+      console.log (Array.from("0"));
+      } else {
+        return false;
+      }
+    }
+    beepBoop(0);
+Expected Output: ['0']
+<!-- Test Passed! -->
+
+
+
+
+
+
+
+______________________________________________________________________
+
+Describe: numbersToDigits(inputtedNumber)
+
+Test: "It should return a multi-digit number separated into individual digits in an array."
+Code:
+let inputtedNumber = 123456
+
+  let inputtedNumber = 123456;
+  let digits = inputtedNumber.toString().split("");
+  let digitsArray = digits.map(Number)
+  console.log(digitsArray);
+
+Expected Output = [1, 2, 3, 4, 5, 6]
+<!-- Test Passed! -->
+
+
+
+
+
+
+
+
+
+
+Test these later, other tests needed first.
+
+<!-- Test: "It should return "Beep!" when user enters a 1"
 Code: beepBoop(inputtedNumber);
 inputtedNumber = 1
 Expected Output: "BEEP!"
@@ -60,17 +119,17 @@ Expected Output: "BEEP!"
 <!-- Test Passed! -->
 
 
-Test: "It should return "Not a Number!" when the user enters something that isn't a number."
-Code: beepBoop(inputtedNumber);
-inputtedNumber = "A"
-  if (isNaN(number)) {
-    return 'Not a Number!';
-  }
-Expected output" "Not a Number!"
-<!-- Test Passed! -->
-
 
 <!-- Test: "It should return "Beep!" when user enters a number with more than one 1"
 Code: beepBoop(theArgument);
 theArgument = 11
-Expected Output: "BEEP!" -->
+Expected Output: "BEEP!"
+
+    function beepBoop(inputtedNumber, String) {
+      if (inputtedNumber === 1) {
+        console.log "Beep!";
+      } else {
+        return false;
+      }
+    }
+    beepBoop(1); --> 
