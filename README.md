@@ -33,21 +33,13 @@ theArgument = 0
   }
   beepBoop(0);
 Expected Output: ['0']
-Test Passed!
+<!-- Test Passed! -->
 
-New test for different outcome.
+New test for beepBoop function with different outcome expected.
 
-  function beepBoop(theArgument) {
-  if (theArgument === 0) {
-    console.log (Array.from("0"));
-    } else {
-      return false;
-    }
-  }
-  beepBoop(2);
+Test: "It should return an array with a 0 if the number 0 is inputted"
+Code: beepBoop(theArgument);
+theArgument = 4
 Expected Output: false
-Test Passed!
+<!-- Test Passed! -->
 
-Test: "Any number with a 3 should return "Won't you be my neighbor!""
-Code: beepBoop(0);
-theArgument = 0
