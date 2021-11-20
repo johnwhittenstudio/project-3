@@ -18,14 +18,14 @@ Example: If a user inputs a 5, the program should display a list of values: "0",
 
 ______________________________________________________________________
 
-Describe: beepBoop(theArgument)
+Describe: beepBoop(inputtedNumber)
 
 Test: "It should return an array with a 0 if the number 0 is inputted"
-Code: beepBoop(theArgument);
-theArgument = 0
+Code: beepBoop(inputtedNumber);
+inputtedNumber = 0
 
-    function beepBoop(theArgument) {
-    if (theArgument === 0) {
+    function beepBoop(inputtedNumber) {
+    if (inputtedNumber === 0) {
       console.log (Array.from("0"));
       } else {
         return false;
@@ -38,19 +38,19 @@ Expected Output: ['0']
 New test for beepBoop function with different outcome expected.
 
 Test: "It should return an array with a 0 if the number 0 is inputted"
-Code: beepBoop(theArgument);
-theArgument = 4
+Code: beepBoop(inputtedNumber);
+inputtedNumber = 4
 Expected Output: false
 <!-- Test Passed! -->
 
 
 Test: "It should return "Beep!" when user enters a 1"
-Code: beepBoop(theArgument);
-theArgument = 1
+Code: beepBoop(inputtedNumber);
+inputtedNumber = 1
 Expected Output: "BEEP!"
 
-    function beepBoop(theArgument) {
-      if (theArgument === 1) {
+    function beepBoop(inputtedNumber) {
+      if (inputtedNumber === 1) {
         console.log "Beep!";
       } else {
         return false;
@@ -58,3 +58,19 @@ Expected Output: "BEEP!"
     }
     beepBoop(1);
 <!-- Test Passed! -->
+
+
+Test: "It should return "Not a Number!" when the user enters something that isn't a number."
+Code: beepBoop(inputtedNumber);
+inputtedNumber = "A"
+  if (isNaN(number)) {
+    return 'Not a Number!';
+  }
+Expected output" "Not a Number!"
+<!-- Test Passed! -->
+
+
+<!-- Test: "It should return "Beep!" when user enters a number with more than one 1"
+Code: beepBoop(theArgument);
+theArgument = 11
+Expected Output: "BEEP!" -->
