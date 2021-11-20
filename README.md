@@ -21,17 +21,17 @@ ______________________________________________________________________
 Describe: beepBoop(theArgument)
 
 Test: "It should return an array with a 0 if the number 0 is inputted"
-Code: beepBoop(0);
+Code: beepBoop(theArgument);
 theArgument = 0
 
-  function beepBoop(theArgument) {
-  if (theArgument === 0) {
-    console.log (Array.from("0"));
-    } else {
-      return false;
+    function beepBoop(theArgument) {
+    if (theArgument === 0) {
+      console.log (Array.from("0"));
+      } else {
+        return false;
+      }
     }
-  }
-  beepBoop(0);
+    beepBoop(0);
 Expected Output: ['0']
 <!-- Test Passed! -->
 
@@ -43,3 +43,18 @@ theArgument = 4
 Expected Output: false
 <!-- Test Passed! -->
 
+
+Test: "It should return "Beep!" when user enters a 1"
+Code: beepBoop(theArgument);
+theArgument = 1
+Expected Output: "BEEP!"
+
+    function beepBoop(theArgument) {
+      if (theArgument === 1) {
+        console.log "Beep!";
+      } else {
+        return false;
+      }
+    }
+    beepBoop(1);
+<!-- Test Passed! -->
