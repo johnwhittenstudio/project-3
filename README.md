@@ -16,9 +16,21 @@ A user should be able to enter a new number and see new results over and over ag
 Example: If a user inputs a 5, the program should display a list of values: "0", "Beep!", "Boop", "Won't you be my neighbor?", 4, 5 -->
 
 
-______________________________________________________________________
+_____________________________________________________________________________________________
 
 Describe: beepBoop(inputtedNumber)
+
+
+Test: "It should return "Not a Number!" when the user enters something that isn't a number."
+Code: beepBoop(inputtedNumber);
+inputtedNumber = "A"
+  if (isNaN(number)) {
+    return 'Not a Number!';
+  }
+Expected output" "Not a Number!"
+<!-- Test Passed! -->
+
+________________________________
 
 Test: "It should return an array with a 0 if the number 0 is inputted"
 Code: beepBoop(inputtedNumber);
@@ -43,37 +55,28 @@ inputtedNumber = 4
 Expected Output: false
 <!-- Test Passed! -->
 
-
-Test: "It should return "Not a Number!" when the user enters something that isn't a number."
-Code: beepBoop(inputtedNumber);
-inputtedNumber = "A"
-  if (isNaN(number)) {
-    return 'Not a Number!';
-  }
-Expected output" "Not a Number!"
-<!-- Test Passed! -->
+________________________________
 
 
-
-Test: "It should return an array with a 0 if the number 0 is inputted"
+Test: "It should return an array counting up to the number inputted"
 Code: beepBoop(inputtedNumber);
 inputtedNumber = 0
 
-    function beepBoop(inputtedNumber) {
-    if (inputtedNumber === 0) {
-      console.log (Array.from("0"));
-      } else {
-        return false;
-      }
+function beeoBoop(number) {
+  let s = "";
+  let finalArray = [];
+  for (let i = 1; i <= number; i++) {
+    s += i;
+    if (i , (number)) {
+      s += ', ';
     }
-    beepBoop(0);
-Expected Output: ['0']
+  }
+  finalArray.push(s);
+  return finalArray;
+}
+beepBoop(15);
+Expected Output: [ '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ' ]
 <!-- Test Passed! -->
-
-
-
-
-
 
 
 ______________________________________________________________________
