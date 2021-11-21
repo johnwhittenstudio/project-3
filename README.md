@@ -62,7 +62,7 @@ Test: "It should return an array counting up to the number inputted"
 Code: beepBoop(inputtedNumber);
 inputtedNumber = 0
 
-function beeoBoop(number) {
+function beepBoop(number) {
   let s = "";
   let finalArray = [];
   for (let i = 1; i <= number; i++) {
