@@ -1,19 +1,66 @@
-<!-- Mr. Roboger's Neighborhood
+# Mr. Roboger's Neighborhood
+## by _**John Whitten**_
+### _November 20, 2021_ 
 
-GOAL: Create a web application that takes a number from the user and returns a range of numbers from 0 to the user inputted number with the following substitutions made within the returned range:
+#### _The third independent learning project from Epicodus._
+ 
+## Technologies Used
+ 
+* _HTML_
+* _CSS_
+* _Bootstrap_
+* _Javascript_
+* _jQuery-3.6.0_
+ 
+## Description
+ 
+Mr. Roboger's Neighborhood is a web application that takes a number from the user and returns a range of numbers from 0 to the user inputted number with the following substitutions made within the returned range:
 
 Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
 Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
 Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
 
-These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. So, for example, in your finished program,
+These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. For example,
 
-The number 13 should be replaced with "Won't you be my neighbor?"
-The number 21 should be replaced with "Boop".
-The number 32 should be replaced with "Won't you be my neighbor?"
+- The number 13 should be replaced with "Won't you be my neighbor?"
+- The number 21 should be replaced with "Boop".
+- The number 32 should be replaced with "Won't you be my neighbor?"
 A user should be able to enter a new number and see new results over and over again.
 
-Example: If a user inputs a 5, the program should display a list of values: "0", "Beep!", "Boop", "Won't you be my neighbor?", 4, 5 -->
+Example: If a user inputs a 5, the program should display a list of values: "0", "Beep!", "Boop", "Won't you be my neighbor?", 4, 5
+
+
+## Directions
+ 
+Download this portfolio from GitHub and open in terminal.
+
+...https://github.com/johnwhittenstudio/project-3...
+ 
+Contents include the following html page:
+* index.html
+ 
+The html web form does not need a server to run and can be completed and interacted with by clicking on the "click here" button.
+ 
+This html web form works on Chrome, Firefox, and Safari.
+ 
+ 
+## Known Bugs
+ 
+* _Website not operational as of November 21, 2021._
+ 
+## License
+ 
+[MIT License](https://opensource.org/licenses/MIT)
+ 
+_If you encounter any issues with this site, please contact John at [johnwhitten.studio@gmail.com](mailto:johnwhitten.studio@gmail.com)_
+ 
+Published _2021_ _John Whitten_
+
+
+
+<!-- Mr. Roboger's Neighborhood
+
+GOAL: Create  -->
 
 
 _____________________________________________________________________________________________
