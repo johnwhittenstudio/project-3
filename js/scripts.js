@@ -18,9 +18,8 @@ else if
 else { numberArray.push(i);
 }
 }
-  return numberArray;
+return numberArray;
 }
-beepBoop(34)
 
 
 // UI Logic
@@ -28,6 +27,9 @@ beepBoop(34)
 $(document).ready(function(){
   $("form#beep-boop").submit(function(event){
     event.preventDefault();
-    $("#beep-boop").submit(beepBoop);
+    // const results = $("#beepBoop").val();
+    $("#beep-boop").html(beepBoop(event));
+    // $("#beep-boop").show();
   });
 });
+

@@ -10,9 +10,8 @@
   <body>
     <div class="container">
       <h2>Mr Roboger's Neighborhood</h2>
-      <form> 
-        <div class="form-group">
         <form id="beep-boop">
+        <div class="form-group">
           <br>
           <p>Input a number from 1-100. Mr. Roboger will return your number displayed from 0 to your number with certain numbers replaced with words and phrases.</p>
           <p>The following rules will apply:
@@ -22,15 +21,15 @@
             <li>Numbers that contain a 3 will be replaced with "Won't you be my neighbor?"</li>
           </ul></p>
           <br>
-          <label for="numberInput">Enter a number</label>
-          <input type="number" class="form-control" id="numberInput" placeholder="number">
-          <small id="numberRange" class="form-text text-muted">Enter a number from 1-100.</small>
+          <label for="beepBoop">Enter a number</label>
+          <input type="number" class="form-control" id="beepBoop" placeholder="number">
+          <small class="form-text text-muted">Enter a number from 1-100.</small>
           <br>
           <button type="submit" class="btn btn-info">Submit Survey</button>
         </div>
-      </form>
+        </form>
       <br>
-      <p>Mr. Roboger's Return:<span id="beep-boop"></span></p>
+      <br><p>Mr. Roboger's Response:<span id="beep-boop"></span></p><br>
     </div>
   </body>
 </html>
