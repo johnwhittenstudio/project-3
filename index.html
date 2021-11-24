@@ -1,35 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Mr. Roboger's Neighborhood</title>
-  </head>
-  <body>
-    <div class="container">
-      <h2>Mr Roboger's Neighborhood</h2>
-        <form id="beep-boop">
-        <div class="form-group">
-          <br>
-          <p>Input a number from 1-100. Mr. Roboger will return your number displayed from 0 to your number with certain numbers replaced with words and phrases.</p>
-          <p>The following rules will apply:
-          <ul>
-            <li>Numbers that contain a 1 will be replaced with "Beep!"</li>
-            <li>Numbers that contain a 2 will be replaced with "Boop!"</li>
-            <li>Numbers that contain a 3 will be replaced with "Won't you be my neighbor?"</li>
-          </ul></p>
-          <br>
-          <label for="beepBoop">Enter a number</label>
-          <input type="number" class="form-control" id="beepBoop" placeholder="number">
-          <small class="form-text text-muted">Enter a number from 1-100.</small>
-          <br>
-          <button type="submit" class="btn btn-info">Submit Survey</button>
-        </div>
-        </form>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Mr. Roboger's Neighborhood</title>
+</head>
+<body>
+  <div class="header">
+    <h1>Mr. Roboger's Neighborhood</h1>
+    <h4><em>“It’s good to be curious about many things.”</em></h4> 
+    <h5>Fred Rogers (1928-2003)</h5> 
+  </div>
+  <div class="container">
+    <div class="card">
+      <div id="card1">
+      <img src="img/img_03.jpg" alt="Fred Rogers kneeling to the right of a robot">
       <br>
-      <br><p>Mr. Roboger's Response:<span id="beep-boop"></span></p><br>
+      <h2><strong>How To Play</strong></h2>
+      <br>
+        <div id="instructions">
+          <p><strong>Input any number.</strong></p> 
+          <p>Mr. Roboger will respond by displaying 0 to your number, but certain numbers will be replaced with robo words and friendly phrases.</p>
+          <p><strong>The following rules will apply:</strong></p>
+            <p><ul>
+              <li>Numbers that contain a 1 will be replaced with "Beep!"</li>
+              <li>Numbers that contain a 2 will be replaced with "Boop!"</li>
+              <li>Numbers that contain a 3 will be replaced with "Won't you be my neighbor?"</li>
+            </ul></p>
+          <br>
+          <p><strong>Scroll down to enter your number!</strong></p>  
+        </div>    
+      </div>
+    </div>  
+    <br>
+    <div class="card">
+      <div id="card2">
+        <div class="userInput">
+          <form id="inputForm">
+            <div class="form-group">
+              <h3><strong>Enter a number to see Mr. Roboger's response!</strong></h3>
+              <br>
+                <input id="numberInput" class="form-group" type="number" placeholder="number">
+                <small class="form-text text-muted">Any number you can think of, any number you like.</small>
+            </div> 
+            <br>
+            <button class="btn btn-info" type="submit">Submit!</button>
+          </form>
+        </div>
+        <br>   
+        <br>
+        <div id="results">
+        <br>
+          <h3>Mr. Roboger's Response:</h3>
+          <ul id="numberList"></ul>
+        </div>
+      </div>  
+    </div>  
+    <div class="footer">
+      <p>created by John Whitten in 2021 for <a href="https://www.epicodus.com/"> <em>Epicodus</em></a></p>
     </div>
-  </body>
+  </div>
+</body>
 </html>

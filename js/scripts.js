@@ -1,9 +1,8 @@
 // Business Logic
 
-
-function beepBoop(num) {
+function beepBoop(inputNumber) {
   let numberArray = [];
-  for (let i = 0; i <= num; i++) {
+  for (let i = 0; i <= inputNumber; i++) {
   if (i.toString().includes('3') === true) {
     numberArray.push("Won't you be my neighbor?"); 
   }
@@ -22,14 +21,21 @@ return numberArray;
 }
 
 
+
 // UI Logic
 
-$(document).ready(function(){
-  $("form#beep-boop").submit(function(event){
-    event.preventDefault();
-    // const results = $("#beepBoop").val();
-    $("#beep-boop").html(beepBoop(event));
-    // $("#beep-boop").show();
-  });
+$(document).ready(function() {
+	$("#inputForm").submit(function(event) {
+		event.preventDefault();
+		$("#results").show();
+		$("ul#numberList").empty();
+
+		inputNumber = parseInt($("input#numberInput").val());
+		
+		const results = beepBoop(inputNumber);
+		for (const result of results) {
+			$("ul#numberList").append("<li>" + result + "</li>");
+		}
+	})
 });
 

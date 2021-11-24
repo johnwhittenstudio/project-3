@@ -1,0 +1,78 @@
+#results {
+  display: none;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(252, 126, 126);
+  color: white;
+}
+h1 {
+  padding: 10px;
+  text-shadow: 2px 2px rgb(110, 54, 54);
+  transition: 0.5s;
+  font-family: cursive;
+  font-size: 80px;
+}
+h2 {
+  font-family: cursive;
+}
+h3 {
+  font-family: cursive;
+}
+h4 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  text-shadow: 1px 1px rgb(110, 54, 54);
+  transition: 0.5s;
+}
+h5 {
+  color: white;
+  font-size: 16px;
+  text-shadow: 1px 1px rgb(110, 54, 54);
+  transition: 0.5s;
+}
+img {
+  float: right;
+  max-width: 40%;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+body {
+  background-color: rgb(252, 126, 126);
+}
+#card1 {
+  margin-top: 5px;
+  padding: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  border-radius: 5px;
+  background-color: lightcyan;
+}
+#card2 {
+  margin-top: 5px;
+  padding: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: lightcyan;
+}
+.footer {
+  position: bottom;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(252, 126, 126);
+  color: white;
+  text-align: center;
+  font-style: bold;
+}
+a {
+  color: white;
+}
+a:hover {
+  color: rgb(1, 147, 184);
+}
