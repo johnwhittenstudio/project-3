@@ -21,7 +21,6 @@ return numberArray;
 }
 
 
-
 // UI Logic
 
 $(document).ready(function() {
