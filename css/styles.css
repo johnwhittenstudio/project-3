@@ -9,6 +9,7 @@
 }
 h1 {
   padding: 10px;
+  margin-bottom: 20px;
   text-shadow: 2px 2px rgb(110, 54, 54);
   transition: 0.5s;
   font-family: cursive;
@@ -35,7 +36,7 @@ h5 {
 }
 img {
   float: right;
-  max-width: 40%;
+  max-width: 45%;
   padding-left: 10px;
   margin-left: 20px;
 }
